@@ -1,0 +1,3645 @@
+{
+ "id": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "idencuesta": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "NUMERODOCUMENTOTITULAR": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "NOMBRECOMPLETO": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "fechadiligenciaencuesta": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "horafinaliza": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "estado": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "identificacion": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "descripcion": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "fechaenviado": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "usuarioId": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDPROYECTO": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "NOMBREPROYECTO": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DESEAPARTICIPAR": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PORQUENOINTERESADO": {
+  "condicion": {
+   "DESEAPARTICIPAR": [
+    "NO"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "HOGAR_DISPONE_TIERRA": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    0
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "HOGAR_DISPONE_AGUA": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    0
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CODDPTOATENCION": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CODMUNICIPIOATENCION": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ZONA": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LOCALIDAD": {
+  "condicion": {
+   "ZONA": [
+    1
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BARRIO": {
+  "condicion": {
+   "ZONA": [
+    1
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CentroPoblado": {
+  "condicion": {
+   "ZONA": [
+    2
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TipoEstructura": {
+  "condicion": {
+   "ZONA": [
+    1,
+    2
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "Direccion_Rural": {
+  "condicion": {
+   "ZONA": [
+    3
+   ],
+   "TipoEstructura": [
+    3
+   ]
+  },
+  "valores": {
+   "valor": "^.{3,100}$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DireccionTipoManzana": {
+  "condicion": {
+   "TipoEstructura": [
+    2
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "Direccion_TManzana": {
+  "condicion": {
+   "TipoEstructura": [
+    2
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DireccionTipoVia": {
+  "condicion": {
+   "TipoEstructura": [
+    1
+   ]
+  },
+  "valores": null,
+  "iand": true,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DireccionTVia": {
+  "condicion": {
+   "TipoEstructura": [
+    1
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDCORREGIMIENTO": {
+  "condicion": {
+   "ZONA": [
+    3
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "OTRO_CORREGIMIENTO": {
+  "condicion": {
+   "IDCORREGIMIENTO": [
+    1
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDVEREDA": {
+  "condicion": {
+   "ZONA": [
+    3
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "OTRA_VEREDA": {
+  "condicion": {
+   "IDVEREDA": [
+    1
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "latitud": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": true,
+  "excluida_PTA": true
+ },
+ "longitud": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": true,
+  "excluida_PTA": true
+ },
+ "direccion": {
+  "condicion": {
+   "TipoEstructura": [
+    1,
+    2
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TELEFONO": {
+  "condicion": null,
+  "valores": {
+   "valor": "^[36]\\d{9}$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TieneEmail": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "Email": {
+  "condicion": {
+   "TieneEmail": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": "^[\\w\\.-]+@[\\w\\.-]+$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "OtroTelefono": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CELULAR1": {
+  "condicion": {
+   "OtroTelefono": [
+    "a) Sí, desde un celular propio ",
+    "b) Sí, al celular de un vecino u otra persona "
+   ]
+  },
+  "valores": {
+   "valor": "^[36]\\d{9}$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CELULAR2": {
+  "condicion": {
+   "OtroTelefono": [
+    "a) Sí, desde un celular propio ",
+    "b) Sí, al celular de un vecino u otra persona "
+   ]
+  },
+  "valores": {
+   "valor": "^[36]\\d{9}$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": true,
+  "excluida_PTA": true
+ },
+ "IDTETNIA": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    12,
+    10,
+    9,
+    40,
+    41,
+    11
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDCOMUNIDADHABITA": {
+  "condicion": {
+   "IDTETNIA": [
+    9,
+    40,
+    41,
+    12
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "OTROCOMUNIDAD": {
+  "condicion": {
+   "IDCOMUNIDADHABITA": [
+    6
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TERRITORIOCOL": {
+  "condicion": {
+   "IDCOMUNIDADHABITA": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMUNIDAD": {
+  "condicion": {
+   "IDCOMUNIDADHABITA": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "IDTETNIA": [
+    12
+   ]
+  },
+  "valores": null,
+  "iand": true,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDPUEBLOINDIGENA": {
+  "condicion": {
+   "IDTETNIA": [
+    12
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LENGUANATIVA": {
+  "condicion": {
+   "IDTETNIA": [
+    10,
+    12,
+    9,
+    40,
+    41
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CUALLENGUA": {
+  "condicion": {
+   "LENGUANATIVA": [
+    "SI"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "nacionalidad": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Colombiana",
+    "Venezolana",
+    "Ecuatoriana",
+    "Española",
+    "Otra"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_documento": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "RC",
+    "TI",
+    "CC",
+    "CE",
+    "DNI",
+    "PAS",
+    "SAL",
+    "PEP",
+    "PPT"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "num_documento": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "sexo_persona": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "M",
+    "F",
+    "I"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "pri_apellido": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "seg_apellido": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": true,
+  "excluida_PTA": true
+ },
+ "pri_nombre": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "seg_nombre": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": true,
+  "excluida_PTA": true
+ },
+ "nombre_completo": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "fec_nacimiento": {
+  "condicion": null,
+  "valores": {
+   "valor": "^\\d{4}-\\d{2}-\\d{2}$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "Edad": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "FecExpedicion": {
+  "condicion": {
+   "Edad": [
+    17
+   ]
+  },
+  "valores": {
+   "valor": "^\\d{4}-\\d{2}-\\d{2}$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "EdadExped": {
+  "condicion": {
+   "Edad": [
+    17
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": true,
+  "excluida_PTA": true
+ },
+ "representante": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDPARENTESCO": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDIDENTIDADGENERO": {
+  "condicion": {
+   "Edad": [
+    12
+   ]
+  },
+  "valores": {
+   "valor": [
+    8,
+    7,
+    619,
+    620,
+    621
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDCONDICIONSEXUAL": {
+  "condicion": {
+   "Edad": [
+    12
+   ]
+  },
+  "valores": {
+   "valor": [
+    621,
+    622,
+    623,
+    624,
+    625,
+    626
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "IDESTADOCIVIL": {
+  "condicion": {
+   "Edad": [
+    12
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_ver.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_oir.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_hablar.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_moverse.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_banarse.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_salir.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_entender.Seleccionar": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DIFICULTADACTIVIDAD.ind_discap_ninguna.Seleccionar": {
+  "condicion": {
+   "DIFICULTADACTIVIDAD.ind_discap_ver.Seleccionar": [
+    2
+   ],
+   "DIFICULTADACTIVIDAD.ind_discap_oir.Seleccionar": [
+    2
+   ],
+   "DIFICULTADACTIVIDAD.ind_discap_hablar.Seleccionar": [
+    2
+   ],
+   "DIFICULTADACTIVIDAD.ind_discap_moverse.Seleccionar": [
+    2
+   ],
+   "DIFICULTADACTIVIDAD.ind_discap_banarse.Seleccionar": [
+    2
+   ],
+   "DIFICULTADACTIVIDAD.ind_discap_salir.Seleccionar": [
+    2
+   ],
+   "DIFICULTADACTIVIDAD.ind_discap_entender.Seleccionar": [
+    2
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": true,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DocFrontal": {
+  "condicion": {
+   "representante": [
+    "SI"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DocAnverso": {
+  "condicion": {
+   "representante": [
+    "SI"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "actividad_ppal": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Trabajando",
+    "Buscando trabajo",
+    "Estudiando",
+    "Oficios del hogar",
+    "Rentista",
+    "Jubilado o pensionado",
+    "Incapacitado permanente para trabajar",
+    "Sin actividad"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "num_sem_buscando": {
+  "condicion": {
+   "actividad_ppal": [
+    "Buscando trabajo"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_empleado_actividad_ppal": {
+  "condicion": {
+   "actividad_ppal": [
+    "Trabajando"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Empleado de empresa particular",
+    "Empleado del gobierno",
+    "Empleado doméstico",
+    "profesional independiente",
+    "Trabajador independiente o por cuenta propia",
+    "Patrón o empleador",
+    "Trabajador sin remuneración",
+    "Ayudante sin remuneración (hijo o familiar de empleados domésticos, mayordomos, jornaleros, etc.)",
+    "Jornalero o peón"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "vlr_ingr_salario_actividad_ppal": {
+  "condicion": {
+   "actividad_ppal": [
+    "Trabajando"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "sector_economico_actividad_ppal": {
+  "condicion": {
+   "actividad_ppal": [
+    "Trabajando"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Agricultura, horticultura, silvicultura",
+    "Actividades pecuarias",
+    "Apicultura, Acuicultura, cría y explotación de especies menores",
+    "Actividades de servicios de alimentos y restaurantes (cocineros, meseros, panaderos, etc.)",
+    "Artesanías",
+    "Caza y recolección, pesca",
+    "Construcción",
+    "Comercio, ventas y servicio al cliente (tiendas, misceláneas, ferreterías, etc.)",
+    "Servicios de turismo (alojamiento, servicio de guía, agencias de viaje, recreacionistas, etc.)",
+    "Servicios financieros, seguros, actividades inmobiliarias",
+    "Servicios públicos: electricidad, gas y agua",
+    "Servicios de minería (ayudante u operario)",
+    "Industria manufacturera (modistas, zapateros, etc.)",
+    "Mecánicos, electricistas, técnicos en mantenimiento y reparación, carpinteros, plomeros, soldadores, ornamentado, etc. (sea industrial o residencial)",
+    "Servicios domésticos y de limpieza (aseadores, conserje, jardineros, etc",
+    "Servicios de transporte o almacenamiento",
+    "Servicios informáticos y de telecomunicaciones",
+    "Salud, educación, servicios sociales y  comunitarios; organizaciones",
+    "Sector público (alcaldía, gobernación, entidades del gobierno, fuerzas armadas)",
+    "Servicios administrativos (secretariado, mensajería, recepcionistas, digitadores, etc",
+    "Estilistas, esteticistas y afines"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "otra_actividad": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_empleado_otra_actividad": {
+  "condicion": {
+   "otra_actividad": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Empleado de empresa particular",
+    "Empleado del gobierno",
+    "Empleado doméstico",
+    "profesional independiente",
+    "Trabajador independiente o por cuenta propia",
+    "Patrón o empleador",
+    "Trabajador sin remuneración",
+    "Ayudante sin remuneración (hijo o familiar de empleados doméstico",
+    "Trabajador de finca, tierra o parcela propia, en arriendo, aparcería o usufructo",
+    " Trabajador sin remuneración",
+    "Ayudante sin remuneración (hijo o familiar de empleados domésticos, mayordomos, jornaleros, etc.)",
+    "Jornalero o peón"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "vlr_ingr_honorarios_otra_actividad": {
+  "condicion": {
+   "otra_actividad": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "vlr_ingr_Cosecha": {
+  "condicion": {
+   "ZONA": [
+    "2",
+    "3"
+   ],
+   "tip_empleado_otra_actividad": [
+    "Trabajador independiente o por cuenta propia",
+    "Patrón o empleador",
+    "Trabajador de finca, tierra o parcela propia, en arriendo, aparcería o usufructo"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": true,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_pension.ind_ingr_pension.Seleccione": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_pension.ind_ingr_pension.¿Cuánto recibió?": {
+  "condicion": {
+   "ind_ingr_pension.ind_ingr_pension.Seleccione": [
+    "1"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_remesa_pais.ind_ingr_remesa_pais.Seleccione": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_remesa_pais.ind_ingr_remesa_pais.¿Cuánto recibió?": {
+  "condicion": {
+   "ind_ingr_remesa_pais.ind_ingr_remesa_pais.Seleccione": [
+    "1"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_remesa_exterior.ind_ingr_remesa_exterior.Seleccione": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_remesa_exterior.ind_ingr_remesa_exterior.¿Cuánto recibió?": {
+  "condicion": {
+   "ind_ingr_remesa_exterior.ind_ingr_remesa_exterior.Seleccione": [
+    "1"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_arriendos.ind_ingr_arriendos.Seleccione": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_arriendos.ind_ingr_arriendos.¿Cuánto recibió?": {
+  "condicion": {
+   "ind_ingr_arriendos.ind_ingr_arriendos.Seleccione": [
+    "1"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_otros_ingresos.ind_otros_ingresos.Seleccione": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_otros_ingresos.ind_otros_ingresos.¿Cuánto recibió?": {
+  "condicion": {
+   "ind_otros_ingresos.ind_otros_ingresos.Seleccione": [
+    "1"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_estado.ind_ingr_estado.Seleccione": {
+  "condicion": {
+   "Edad": [
+    13
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_ingr_estado.ind_ingr_estado.¿Cuánto recibió?": {
+  "condicion": {
+   "ind_ingr_estado.ind_ingr_estado.Seleccione": [
+    "1"
+   ]
+  },
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,6}|99999999)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_leer_escribir": {
+  "condicion": {
+   "Edad": [
+    4
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "niv_educativo": {
+  "condicion": {
+   "Edad": [
+    4
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    0,
+    9
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "grado_alcanzado": {
+  "condicion": {
+   "Edad": [
+    4
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    0,
+    99
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_estudia": {
+  "condicion": {
+   "Edad": [
+    4
+   ]
+  },
+  "valores": {
+   "valor": [
+    1,
+    2,
+    9
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_seg_social": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    0,
+    9
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_vivienda": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_ocupa_vivienda": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_mat_paredes": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    0
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_mat_pisos": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "MATERIAL_CUBIERTA": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    0
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "NUM_PERSONAS_HOGAR": {
+  "condicion": null,
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,2}|15)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "num_cuartos_vivienda": {
+  "condicion": null,
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,2}|15)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "num_cuartos_dormir": {
+  "condicion": null,
+  "valores": {
+   "valor": "^(0|[1-9]\\d{0,2}|15)$",
+   "Tipo": "regex"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ESPACIOS_INDEPENDIENTES": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_prepara_alimentos": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SERVICIOS_PUBLICOS.ind_tiene_energia.Seleccion": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SERVICIOS_PUBLICOS.ind_tiene_alcantarillado.Seleccion": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SERVICIOS_PUBLICOS.ind_tiene_gas.Seleccion": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SERVICIOS_PUBLICOS.ind_tiene_recoleccion.Seleccion": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SERVICIOS_PUBLICOS.ind_tiene_acueducto.Seleccion": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_sanitario": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_elimina_basura": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_energia_cocina": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ind_agua_llega_7dias": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    9
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_origen_agua": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "tip_uso_agua_beber": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "AFECTACIONES_EVENTOS.ind_evento_inundacion.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "AFECTACIONES_EVENTOS.ind_evento_avalancha.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "AFECTACIONES_EVENTOS.ind_evento_terremoto.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "AFECTACIONES_EVENTOS.ind_evento_incendio.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "AFECTACIONES_EVENTOS.ind_evento_vendaval.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "AFECTACIONES_EVENTOS.ind_evento_hundimiento.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_nevera.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_lavadora.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_pc.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_internet.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_moto.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_tractor.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_carro.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERV_HOGAR.ind_tiene_bien_raiz.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    1,
+    2
+   ],
+   "Tipo": "int"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.a) Estufa eléctrica o de gas.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.b) Mueble de piso con superficie de trabajo.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.c) Lavaplatos.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.d) Gabinete de pared.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.e) Locero de pared.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.f) Platero con tapa.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.g) Caneca con tapa.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.h) Vajilla.Selección": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LA_COCINA_CUENTA_CON.i) Juego de ollas básico.Selección": {
+  "condicion": null,
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SU_PROYECTO_NEGOCIO_ES": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo",
+    "No tengo proyecto productivo o negocio"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TIPOS_BIENES_SERVICIOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Agricultura, ganadería, caza, silvicultura y pesca",
+    "Explotación de minas y canteras",
+    "Industrias manufactureras",
+    "Suministro de electricidad, gas, vapor, y aire acondicionado",
+    "Distribución de agua; evacuación y tratamiento de aguas residuales, gestión de desechos y actividades de saneamiento ambiental",
+    "Construcción",
+    "Comercio al por mayor y al por menor; reparación de vehículos automotores y motocicletas",
+    "Transporte y almacenamiento",
+    "Alojamiento y servicios de comida",
+    "Información y comunicaciones",
+    "Actividades financieras y de seguros",
+    "Actividades inmobiliarias",
+    "Actividades profesionales, científicas y técnicas",
+    "Actividades de servicios administrativos y de poyo",
+    "Administración pública y defensa; planes de seguridad social de afiliación obligatoria",
+    "Educación",
+    "Actividades de atención de la salud humana y de asistencia social",
+    "Actividades artísticas, de entretenimiento y recreación",
+    "Otras actividades de servicios",
+    "Actividades de los hogares en calidad de empleadores; actividades no diferenciadas de los hogares individuales como productores de bienes y servicios para uso propio",
+    "Actividades de organizaciones y entidades extraterritoriales\\\""
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "BIENES_SERVICIOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "producto/servicio": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PROMEDIO_VOLUMEN_MENSUAL_CANTIDAD": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PROMEDIO_VOLUMEN_MENSUAL_UNIDAD_MEDIDA": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Kilos",
+    "Toneladas",
+    "Litros",
+    "Unidades",
+    "Cabezas"
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ALMACENAR_PROVISIONES": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "En un local, vivienda, finca o terreno propio",
+    "En un local, vivienda, finca o terreno en arriendo o en aparcería",
+    "En una finca o un terreno ajeno con permiso del propietario (usufructo)",
+    "En una finca o un terreno ajeno sin permiso del propietario",
+    "En un quiosco o caseta",
+    "En un vehículo (moto, taxi, carro, bus, lancha, barco, zorra o carreta)",
+    "En un territorio colectivo",
+    "No tienen ningún lugar de acopio"
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PROCESOS_AGREGACION_VALOR_PRODUCTOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Seleccion",
+    "Lavado",
+    "Empaque o embalaje",
+    "Almacenamiento",
+    "Transformación"
+   ],
+   "Tipo": "listlist"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "VALOR_PROMEDIO_MENSUAL_BIENES_SERVICIOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    " Menos de $100.000 pesos.",
+    " Entre $100.000 y menos de $200.000 pesos.",
+    " Entre $200.000 y menos de $300.000 pesos.",
+    " Entre $300.000 y menos de $400.000 pesos.",
+    " Entre $400.000 y menos de $500.000 pesos.",
+    " Entre $500.000 y menos de $600.000 pesos.",
+    " Entre $600.000 y menos de $700.000 pesos.",
+    " Entre $700.000 y menos de $800.000 pesos.",
+    " Entre $800.000 y menos de $900.000 pesos.",
+    " Más de $900.000 pesos."
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TIEMPO_FUNCIONAMIENTO_NEGOCIO": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Menos de 6 meses",
+    "Entre 6 y 12 meses",
+    "Entre 12 y 18 meses"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CUANTAS_PERSONAS_TRABAJAN": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Un empleado",
+    "2 o  3 empleados",
+    "4 a 10 empleados"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "DONDE_FUNCIONA_PROYECTO/NEGOCIO": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "En su vivienda",
+    "En un local o lote de su vivienda",
+    "En un local, vivienda, finca o terreno propio, diferente a su vivienda de habitación",
+    "En un local, vivienda, finca o terreno en arriendo o en aparcería",
+    "En una finca o un terreno ajeno con permiso del propietario (usufructo)",
+    "En una finca o un terreno ajeno sin permiso del propietario",
+    "En la calle como ambulante o como estacionario",
+    "En un quiosco o caseta",
+    "Puerta a puerta",
+    "En un vehículo (moto, taxi, carro, bus, lancha, barco, zorra o carreta)",
+    "En un territorio colectivo"
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ZONA_UBICACION_PROEYCTO/NEGOCIO": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Cabecera",
+    "Centro Poblado",
+    "Rural disperso"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "SERVICIOS_PUBLICOS_PROYECTO/NEGOCIO": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Energía eléctrica",
+    "Alcantarillado",
+    "Gas natural",
+    "Recolección de basuras",
+    "Acueducto",
+    "Telefonía o Internet"
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PROYECTO.Predio o parcela.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PROYECTO.Predio o parcela.Estado": {
+  "condicion": {
+   "ACTIVOS_PROYECTO.Predio o parcela.Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_MAQUINARIA/EQUIPO.Maquinaria o equipos .Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_MAQUINARIA/EQUIPO.Maquinaria o equipos .Estado": {
+  "condicion": {
+   "ACTIVOS_PRYECTO/NEGOCIO_MAQUINARIA/EQUIPO.Maquinaria o equipos .Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_HERRAMIENTAS.Herramienta.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_HERRAMIENTAS.Herramienta.Estado": {
+  "condicion": {
+   "ACTIVOS_PRYECTO/NEGOCIO_HERRAMIENTAS.Herramienta.Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_INFRAESTRUCTURA_COMERCIAL.Infraestructura productiva o comercial (cercas, mesas, vitrinas, etc).Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_INFRAESTRUCTURA_COMERCIAL.Infraestructura productiva o comercial (cercas, mesas, vitrinas, etc).Estado": {
+  "condicion": {
+   "ACTIVOS_PRYECTO/NEGOCIO_INFRAESTRUCTURA_COMERCIAL.Infraestructura productiva o comercial (cercas, mesas, vitrinas, etc).Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_INSUMOS.Insumos (semillas, inventarios, fertilizantes, materia prima).Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_INSUMOS.Insumos (semillas, inventarios, fertilizantes, materia prima).Estado": {
+  "condicion": {
+   "ACTIVOS_PRYECTO/NEGOCIO_INSUMOS.Insumos (semillas, inventarios, fertilizantes, materia prima).Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_ANIMALES.Animales.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_ANIMALES.Animales.Estado": {
+  "condicion": {
+   "ACTIVOS_PRYECTO/NEGOCIO_ANIMALES.Animales.Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_ESTABLECIMIENTO.Establecimiento comercial o de servicios.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ACTIVOS_PRYECTO/NEGOCIO_ESTABLECIMIENTO.Establecimiento comercial o de servicios.Estado": {
+  "condicion": {
+   "ACTIVOS_PRYECTO/NEGOCIO_ESTABLECIMIENTO.Establecimiento comercial o de servicios.Seleccione": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Bueno",
+    "Regular",
+    "Malo"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "VALOR_PROMEDIO_PROYECTO/NEGOCIO": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    " Menos de $50.000 pesos.",
+    " Entre $50.000 y menos de $100.000 pesos.",
+    " Entre $100.000 y menos de $150.000 pesos.",
+    " Entre $150.000 y menos de $200.000 pesos.",
+    " Entre $200.000 y menos de $250.000 pesos.",
+    " Entre $250.000 y menos de $300.000 pesos.",
+    " Entre $300.000 y menos de $350.000 pesos.",
+    " Entre $350.000 y menos de $400.000 pesos.",
+    " Más de $400.000 pesos."
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PRODUCCION_VENDE/DONA/INTERCAMBIA": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "La vereda - Corregimiento",
+    "Municipio",
+    "Departamento",
+    "Mercado Nacional",
+    "Mercado Internacional",
+    "Autoconsumo"
+   ],
+   "Tipo": "list"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Intermediario particular.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Mayorista.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Plaza de mercado.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Mercado campesino.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Consumidor final.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Plataforma de comercio electrónico.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Agroindustria.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Almacén de cadena.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Exportador.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Compras públicas.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Organización de productores.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "COMERCIALIZA_PRODUCTO.Trueque o intercambio.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "TRASLADO_PRODUCTO/SERVICIO": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "No se requiere traslado",
+    "Equino o mular",
+    "Lancha",
+    "Moto / motocarguero",
+    "Camineta o camion"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "REDES_SOCIALES": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "REGISTRO_COSTOS/INGRESOS/GASTOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "RAZON_NO_REGISTRO_COSTOS/INGRESOS/GASTOS": {
+  "condicion": {
+   "REGISTRO_COSTOS/INGRESOS/GASTOS": [
+    "NO"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "No sabe cómo hacerlo",
+    "No tiene tiempo",
+    "No lo ve necesario"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "RESIDUOS_SOLIDOS/LIQUIDOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Los recogen los servicios del aseo ",
+    "Los entierran",
+    "Los queman",
+    "Los lanzan a un patio, lote, zanja o baldío",
+    "Los lanzan a un río, quebrada, caño o laguna",
+    "Los recoge un servicio informal (zorra, carreta",
+    "Los reciclan"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Financiamiento.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Capacitación en temas de emprendimiento,comercialización, administración.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Acceso a tierra, lote o espacio.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Asistencia técnica.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Insumos o materia prima.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Compra de activos o maquinaria.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Certificaciones sanitarias y de calidad, buenas practicas, etc. (ICA, INVIMA, Secretarias Salud.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Apoyo para la comercialización.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Apoyo en la formalización.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Registro de marca o codigos de barra.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Facturación.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Transporte.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "ASPECTOS_FORTALECER_PROYECTO/NEGOCIO.Acceso a internet y herremientas digitales.Seleccione": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "RECURSOS_PROPIOS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "FUENTE_RECURSOS_PROPIOS": {
+  "condicion": {
+   "RECURSOS_PROPIOS": [
+    "SI"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Ahorros del hogar",
+    "Préstamos",
+    "Aportes de otros programas de apoyo",
+    "Aportes de socios o personas de la comunidad"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CURSOS_SEMINARIOS_FORMACION": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CONOCIMIENTOS_HABILIDADES_TECNICAS": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CONOCIMINETOS_HABILIDADES_ADMON": {
+  "condicion": {
+   "SU_PROYECTO_NEGOCIO_ES": [
+    "De un solo miembro",
+    "Del Hogar",
+    "Grupal",
+    "Comunitario/Colectivo"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PERTENECE_ORGANIZACION_PRODUCTIVA": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "CUAL_ORGANIZACION": {
+  "condicion": {
+   "PERTENECE_ORGANIZACION_PRODUCTIVA": [
+    "SI"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "LE_GUSTARIA_PERTENECER_ORGANIZACION": {
+  "condicion": {
+   "PERTENECE_ORGANIZACION_PRODUCTIVA": [
+    "NO"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "RAZON_NO_PERTENECER_ASOCIACION": {
+  "condicion": {
+   "LE_GUSTARIA_PERTENECER_ORGANIZACION": [
+    "NO"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "Prefiere trabajar solo",
+    "No cuenta con recursos monetarios para hacerlo",
+    "No sabe qué debe hacer para vincularse en alguna organización",
+    "En el municipio no hay organizaciones a las que se pueda integrar"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "PRESUPUESTO": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "RAZON_NO_LLEVA_PRESUPUESTO": {
+  "condicion": {
+   "PRESUPUESTO": [
+    "NO"
+   ]
+  },
+  "valores": {
+   "valor": [
+    "No sabe cómo hacerlo",
+    "No tiene tiempo",
+    "No lo ve necesario",
+    "No le parece necesario",
+    "Otro"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "OTRA_RAZON_NO_LLEVA_PRESUPUESTO": {
+  "condicion": {
+   "RAZON_NO_LLEVA_PRESUPUESTO": [
+    "Otro"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "INSTRUMENTO_FINANCIERO.Cuenta de ahorros o corriente.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Si",
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "No tiene"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "INSTRUMENTO_FINANCIERO.Dinero móvil (daviplata, nequi, movii, etc.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Si",
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "No tiene"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "INSTRUMENTO_FINANCIERO.Tarjeta de crédito.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Si",
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "No tiene"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "INSTRUMENTO_FINANCIERO.Seguro de vida o accidentes .Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Si",
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "No tiene"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "INSTRUMENTO_FINANCIERO.Seguro agropecuario .Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Si",
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "No tiene"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "INSTRUMENTO_FINANCIERO.Otro.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Si",
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "No tiene"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "OTRO_INSTRUMENTO_FINANCIERO": {
+  "condicion": {
+   "INSTRUMENTO_FINANCIERO.Otro.Seleccione": [
+    "Tiene y la usa",
+    "Tiene pero no la usa",
+    "Si"
+   ]
+  },
+  "valores": null,
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "FRECUENCIA_HABLA/INTERACTUAN.Familiares.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Una vez al mes",
+    "Una o dos veces por semana",
+    "Mas de dos veces por semana",
+    ""
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "FRECUENCIA_HABLA/INTERACTUAN.Amigos.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Una vez al mes",
+    "Una o dos veces por semana",
+    "Mas de dos veces por semana",
+    ""
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "FRECUENCIA_HABLA/INTERACTUAN.Vecinos.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "Una vez al mes",
+    "Una o dos veces por semana",
+    "Mas de dos veces por semana",
+    ""
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "HACER_PARTE_DE_GRUPOS_DE.Familiares.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "HACER_PARTE_DE_GRUPOS_DE.Amigos.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "HACER_PARTE_DE_GRUPOS_DE.Vecinos.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ },
+ "HACER_PARTE_DE_GRUPOS_DE.Colegas o grupos de compañeros de trabajo.Seleccione": {
+  "condicion": null,
+  "valores": {
+   "valor": [
+    "SI",
+    "NO"
+   ],
+   "Tipo": "str"
+  },
+  "iand": false,
+  "opcional": false,
+  "excluida_PTA": true
+ }
+}
