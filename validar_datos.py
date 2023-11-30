@@ -19,8 +19,8 @@ def validar_datos(id_encuesta: str, token:str, ruta: str)-> Tuple[pd.DataFrame, 
     headers = {"Authorization": f"Bearer {token}"}
     
     # Se carga y modifica el dataframe
-    dataframe = read__dataframe("212", headers)
-    malla = cargar_malla_validacion("212", ruta_folder=ruta)
+    dataframe = read__dataframe(id_encuesta, headers)
+    malla = cargar_malla_validacion(id_encuesta, ruta_folder=ruta)
     dataframe = expandir_columnas_adicionales(dataframe, malla = malla)
     
     # Se valida la información
