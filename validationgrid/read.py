@@ -158,7 +158,7 @@ def expand_data_frame(col: str, data: pd.DataFrame) -> pd.DataFrame:
     expansion['id'] = relacion_filas
     
     # Se identifica si aún con la expansión hay variables con datos de tipo lista
-    is_list = expansion.map(lambda x: isinstance(x, list)).any()
+    is_list = expansion.applymap(lambda x: isinstance(x, list)).any()
     a_expandir = list(is_list[is_list == True].index)
     
     columnas = list(expansion.columns)
@@ -197,7 +197,7 @@ def expandir_columnas_adicionales(dataframe: pd.DataFrame, malla: dict)-> pd.Dat
     data = dataframe.copy()
     
     # Se identifican las variables que se pueden expandir
-    is_list = data.map(lambda x: isinstance(x, list)).any()
+    is_list = data.applymap(lambda x: isinstance(x, list)).any()
     posible_expandir = list(is_list[is_list == True].index)
     try:
         # Se seleccionan las variables que se deben expandir según la malla
