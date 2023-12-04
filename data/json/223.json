@@ -560,15 +560,15 @@
   "condicion": null,
   "valores": {
    "valor": [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9"
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
    ],
    "Tipo": "int"
   },
@@ -587,9 +587,9 @@
   "condicion": null,
   "valores": {
    "valor": [
-    "1",
-    "2",
-    "3"
+    1,
+    2,
+    3
    ],
    "Tipo": "int"
   },
@@ -2178,7 +2178,7 @@
   },
   "valores": {
    "valor": [
-    "Selección",
+    "Seleccion",
     "Lavado",
     "Empaque o embalaje",
     "Almacenamiento",
