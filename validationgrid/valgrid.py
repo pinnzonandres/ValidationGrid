@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 from typing import List, Union, Optional, Dict, Tuple
 import warnings
-from pandas.core.common import SettingWithCopyWarning
+#from pandas.core.common import SettingWithCopyWarning
 
 warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
-warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
+#warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
 
 
 
