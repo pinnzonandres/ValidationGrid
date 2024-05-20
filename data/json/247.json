@@ -1,0 +1,781 @@
+{
+  "fechadiligenciaencuesta": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "IDPROYECTO": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "NOMBREPROYECTO": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "DESEAPARTICIPAR": {
+    "condicion": null,
+    "valores": {
+      "valor": [
+        "SI",
+        "NO"
+      ],
+      "Tipo": "str"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "PORQUENOINTERESADO": {
+    "condicion": {
+      "DESEAPARTICIPAR": [
+        "NO"
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "HOGAR_DISPONE_TIERRA": {
+    "condicion": null,
+    "valores": {
+      "valor": [
+        1,
+        0
+      ],
+      "Tipo": "int"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "HOGAR_DISPONE_AGUA": {
+    "condicion": null,
+    "valores": {
+      "valor": [
+        1,
+        0
+      ],
+      "Tipo": "int"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "CODDPTOATENCION": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "CODMUNICIPIOATENCION": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "ZONA": {
+    "condicion": null,
+    "valores": {
+      "valor": [
+        1,
+        2,
+        3
+      ],
+      "Tipo": "int"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "LOCALIDAD": {
+    "condicion": {
+      "ZONA": [
+        1
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "BARRIO": {
+    "condicion": {
+      "ZONA": [
+        1
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "CentroPoblado": {
+    "condicion": {
+      "ZONA": [
+        2
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "TipoEstructura": {
+    "condicion": {
+      "ZONA": [
+        1,
+        2
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "DireccionTipoManzana": {
+    "condicion": {
+      "TipoEstructura": [
+        2
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "Direccion_TManzana": {
+    "condicion": {
+      "TipoEstructura": [
+        2
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "DireccionTipoVia": {
+    "condicion": {
+      "TipoEstructura": [
+        1
+      ]
+    },
+    "valores": null,
+    "iand": true,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "direccion": {
+    "condicion": {
+      "TipoEstructura": [
+        1,
+        2
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "IDCORREGIMIENTO": {
+    "condicion": {
+      "ZONA": [
+        3
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "OTRO_CORREGIMIENTO": {
+    "condicion": {
+      "IDCORREGIMIENTO": [
+        1
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "IDVEREDA": {
+    "condicion": {
+      "ZONA": [
+        3
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "OTRA_VEREDA": {
+    "condicion": {
+      "IDVEREDA": [
+        1
+      ]
+    },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "Direccion_Rural": {
+    "condicion": {
+      "ZONA": [
+        3
+      ],
+      "TipoEstructura": [
+        3
+      ]
+    },
+    "valores": {
+      "valor": "^.{3,100}$",
+      "Tipo": "regex"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "TELEFONO": {
+    "condicion": null,
+    "valores": {
+      "valor": "^[36]\\d{9}$",
+      "Tipo": "regex"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "OtroTelefono": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "CELULAR1": {
+    "condicion": {
+      "OtroTelefono": [
+        "a) Sí, desde un celular propio ",
+        "b) Sí, al celular de un vecino u otra persona "
+      ]
+    },
+    "valores": {
+      "valor": "^[36]\\d{9}$",
+      "Tipo": "regex"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "CELULAR2": {
+    "condicion": {
+      "OtroTelefono": [
+        "a) Sí, desde un celular propio ",
+        "b) Sí, al celular de un vecino u otra persona "
+      ]
+    },
+    "valores": {
+      "valor": "^[36]\\d{9}$",
+      "Tipo": "regex"
+    },
+    "iand": false,
+    "opcional": true,
+    "excluida_PTA": true
+  },
+  "TieneEmail": {
+    "condicion": null,
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "Email": {
+    "condicion": {
+      "TieneEmail": [
+        "SI"
+      ]
+    },
+    "valores": {
+      "valor": "^[\\w\\.-]+@[\\w\\.-]+$",
+      "Tipo": "regex"
+    },
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+  },
+  "IDTETNIA": {
+   "condicion": null,
+   "valores": {
+    "valor": [
+     "12",
+     "10",
+     "9",
+     "40",
+     "41",
+     "11"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  }, 
+  "COMUNIDAD": {
+   "condicion": {
+    "IDTETNIA": [
+     "12"
+    ]
+   },
+   "valores": null,
+   "iand": true,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+   "TERRITORIOCOL": {
+    "condicion": {
+      "IDCOMUNIDADHABITA": [
+       "1",
+       "2",
+       "3",
+       "4",
+       "6"
+      ]
+     },
+    "valores": null,
+    "iand": false,
+    "opcional": false,
+    "excluida_PTA": true
+   },
+  "tip_documento": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "num_documento": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "sexo_persona": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "pri_apellido": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "seg_apellido": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": true,
+   "excluida_PTA": true
+  },
+  "pri_nombre": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "seg_nombre": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": true,
+   "excluida_PTA": true
+  },
+  "nombre_completo": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "fec_nacimiento": {
+   "condicion": null,
+   "valores": {
+    "valor": "^\\d{4}-\\d{2}-\\d{2}$",
+    "Tipo": "regex"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "Edad": {
+   "condicion": null,
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "FecExpedicion": {
+   "condicion": {
+    "Edad": [
+     17
+    ]
+   },
+   "valores": {
+    "valor": "^\\d{4}-\\d{2}-\\d{2}$",
+    "Tipo": "regex"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "EdadExped": {
+   "condicion": {
+    "Edad": [
+     17
+    ]
+   },
+   "valores": null,
+   "iand": false,
+   "opcional": true,
+   "excluida_PTA": true
+  },
+  "representante": {
+   "condicion": null,
+   "valores": {
+    "valor": [
+     "SI",
+     "NO"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "IDPARENTESCO": {
+   "condicion": null,
+   "valores": {
+    "valor": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "Tipo": "int"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "IDIDENTIDADGENERO": {
+   "condicion": {
+    "Edad": [
+     12
+    ]
+   },
+   "valores": {
+    "valor": [
+     "8",
+     "7",
+     "619",
+     "620",
+     "621",
+     "616",
+     "615"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "IDCONDICIONSEXUAL": {
+   "condicion": {
+    "Edad": [
+     12
+    ]
+   },
+   "valores": {
+    "valor": [
+     621,
+     622,
+     623,
+     624,
+     625,
+     626
+    ],
+    "Tipo": "int"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "IDESTADOCIVIL": {
+   "condicion": {
+    "Edad": [
+     12
+    ]
+   },
+   "valores": {
+    "valor": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "Tipo": "int"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_ver.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+     "1",
+     "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_oir.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+      "1",
+      "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_hablar.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+      "1",
+      "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_moverse.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+      "1",
+      "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_banarse.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+      "1",
+      "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_salir.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+      "1",
+     "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DIFICULTADACTIVIDAD.ind_discap_entender.Seleccionar": {
+   "condicion": {
+      "DISCAPACIDAD": [
+        "SI"
+      ]
+    },
+   "valores": {
+    "valor": [
+      "1",
+      "2"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "ind_leer_escribir": {
+   "condicion": {
+    "Edad": [
+     4
+    ]
+   },
+   "valores": {
+    "valor": [
+     "SI",
+     "NO"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "niv_educativo": {
+   "condicion": {
+    "Edad": [
+     4
+    ]
+   },
+   "valores": {
+    "valor": [
+      "85",
+      "86",
+      "87",
+      "88",
+      "98",
+      "100",
+      "83",
+      "84"
+    ],
+    "Tipo": "str"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "grado_alcanzado": {
+   "condicion": {
+    "Edad": [
+     4
+    ]
+   },
+   "valores": {
+    "valor": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     0,
+     99
+    ],
+    "Tipo": "int"
+   },
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DocFrontal": {
+   "condicion": {
+    "representante": [
+     "SI"
+    ]
+   },
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  },
+  "DocAnverso": {
+   "condicion": {
+    "representante": [
+     "SI"
+    ]
+   },
+   "valores": null,
+   "iand": false,
+   "opcional": false,
+   "excluida_PTA": true
+  }
+}
